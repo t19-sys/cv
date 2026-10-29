@@ -195,6 +195,48 @@ hr {
     color: #8C8C8C;
 }
 
+/* Gallery carousel */
+
+.carousel {
+    position: relative;
+    margin-top: 0.5rem;
+}
+
+.carousel-image {
+    display: block;
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.carousel-caption {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 2rem 1rem 0.8rem;
+    border-radius: 0 0 8px 8px;
+    background: linear-gradient(transparent, rgba(31, 42, 68, 0.85));
+    color: #FFFFFF;
+    font-weight: 500;
+    pointer-events: none;
+}
+
+.carousel-hint {
+    margin-top: 0.6rem;
+    font-size: 0.8125rem;
+    color: var(--muted-text);
+}
+
+.carousel-credit {
+    margin-top: 0.2rem;
+    font-size: 0.6875rem;
+    color: var(--grey-text);
+}
+
 /* Footer */
 
 footer {
@@ -289,6 +331,7 @@ footer {
     }
 
     .about-me { order: 1; }
+    .gallery { order: 1; }
     .education { order: 2; }
     .qualifications { order: 3; }
     .languages { order: 4; }
@@ -353,5 +396,9 @@ footer {
 
     .interests-text {
         font-size: 0.9375rem;
+    }
+
+    .carousel-image {
+        height: 220px;
     }
 }
